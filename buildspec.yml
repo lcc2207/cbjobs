@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - pip install yamllint
+      - pip install awscli
+      - pip install taskcat
+  build:
+    commands:
+      - ls
+      - /usr/local/bin/yamllint vpc_cloud_formation.yml
