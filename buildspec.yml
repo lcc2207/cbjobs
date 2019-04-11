@@ -9,4 +9,4 @@ phases:
   build:
     commands:
       - ls
-      - /usr/local/bin/yamllint vpc_cloud_formation.yml
+      - /usr/local/bin/yamllint *.yml
