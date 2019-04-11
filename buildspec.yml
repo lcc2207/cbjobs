@@ -6,6 +6,8 @@ phases:
       - pip install yamllint
       - pip install awscli
       - pip install taskcat
+      - apt update
+      - apt install git -y
   build:
     commands:
       - ls
