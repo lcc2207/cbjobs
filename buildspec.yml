@@ -14,4 +14,4 @@ phases:
       - mkdir /repos/
       - git clone https://github.com/lcc2207/cbcloudformation.git
       - /usr/local/bin/yamllint *.yml
-      - ls -l
+      - ls -l /
