@@ -8,10 +8,11 @@ phases:
       - pip install awscli
       - pip install taskcat
       - apt update
-      - apt install git -y
+      - apt install git jq -y
   build:
     commands:
       - mkdir repos/
+      - curl https://api.github.com/users/lcc2207repos -k 
       - git clone https://github.com/lcc2207/cbcloudformation.git repos/
       - /usr/local/bin/yamllint *.yml
       - ls repos
